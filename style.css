@@ -75,10 +75,12 @@ h1{
 
 #wrapper{
 
+    margin: 0 auto;
+
 }
 
 #texto1{
-	background-color: #2b2541;
+	background-color: #454955;
   width: 300px;
   border: 10px solid #f0ecff;
   padding: 40px;
@@ -89,7 +91,7 @@ box-shadow: -4px 7px 11px 6px #000000;
 }
 
 #texto2{
-	background-color: #2b2541;
+	background-color: #454955;
   width: 300px;
   border: 10px solid #f0ecff;
   padding: 40px;
@@ -100,9 +102,10 @@ box-shadow: -4px 7px 11px 6px #000000;
 }
 
 #texto3{
-	background-color: #2b2541;
+	background-color: #454955;
   width: 300px;
   border: 10px solid #f0ecff;
+  
   padding: 40px;
   margin: 10px;
   float: left;
@@ -121,6 +124,35 @@ p{
     transform: translate(-50%,-50%);
     margin: 0 auto;
 }
+
+.Transforme{
+    color: aquamarine;
+}
+
+.circleinferior1 {
+    display:flexbox;
+    position:absolute;
+    top:60%;
+    left:0%;
+    background-image: url("https://dev.java/assets/images/java-logo-vert-blk.png");
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    margin: 0;
+    box-shadow: inset -25px -25px 40px rgba(66, 66, 66, 0.5);
+  }
+  .circleinferior2 {
+    display:flexbox;
+    position:absolute;
+    top:65%;
+    left:20%;
+    background-image: url("https://avatars.githubusercontent.com/u/3171503?s=280&v=4");
+    border-radius: 50%;
+    height: 280px;
+    width: 280px;
+    margin: 0;
+    box-shadow: inset 25px 25px 40px rgba(66, 66, 66, 0.5);
+  }
 
 footer {  
 	position: fixed; 
