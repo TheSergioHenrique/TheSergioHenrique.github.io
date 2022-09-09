@@ -114,6 +114,14 @@ p{
     text-shadow: -4px 3px #000000;
 }
 
+#fim{
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+}
+
 footer {  
 	position: fixed; 
 	left: 0px;  
