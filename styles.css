@@ -54,6 +54,18 @@ nav {
   animation: entering 0.9s ease-in-out;
 }
 
+ul.social-media-list img {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #bebebf;
+  width: 36px;
+  height: 36px;
+}
+
+ul.social-media-list li {
+  display: inline-block;
+}
+
 .memory {
   display: flex;
   flex-direction: column;
