@@ -75,13 +75,13 @@ ul.social-media-list li {
 }
 
 .memory small {
-  color: #bebebf;
+  color: #000000;
   font-size: 0.75rem;
 }
 
 .memory h1 {
   font-size: 2rem;
-  color: #eaeaea;
+  color: #000000;
 }
 
 .memory img {
@@ -106,7 +106,7 @@ ul.social-media-list li {
 
 .memory p {
   font-size: 1.2rem;
-  color: #bebebf;
+  color: #000000;
   line-height: 28px;
 }
 
