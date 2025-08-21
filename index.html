@@ -1,97 +1,208 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheSergioHenrique's Lair</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+    
+    <div class="container">
+        <section id="logs" class="section">
+            <h2 class="section-title">[SYSTEM_LOGS.txt]</h2>
+            <div id="log-container" style="background: #000000; padding: 15px; border: 1px solid #00ff41; font-family: 'Share Tech Mono', monospace; max-height: 400px; overflow-y: auto;">
+                <!-- Logs will be dynamically generated here -->
+            </div>
+            <div style="margin-top: 10px; text-align: center;">
+                <button id="clear-logs" style="background: #001100; color: #ff6600; border: 1px solid #ff6600; padding: 8px 16px; font-family: 'Share Tech Mono', monospace; cursor: pointer; transition: all 0.3s;" 
+                        onmouseover="this.style.background='#ff6600'; this.style.color='#000000';" 
+                        onmouseout="this.style.background='#001100'; this.style.color='#ff6600';">
+                    [CLEAR_LOGS.exe]
+                </button>
+                <button id="export-logs" style="background: #001100; color: #00ff41; border: 1px solid #00ff41; padding: 8px 16px; font-family: 'Share Tech Mono', monospace; cursor: pointer; transition: all 0.3s; margin-left: 10px;" 
+                        onmouseover="this.style.background='#00ff41'; this.style.color='#000000';" 
+                        onmouseout="this.style.background='#001100'; this.style.color='#00ff41';">
+                    [EXPORT_LOGS.txt]
+                </button>
+            </div>
+        </section>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+        <header>
+            <h1 class="glitch" data-text="TheSergioHenrique's Lair">TheSergioHenrique's Lair</h1>
+            <p class="subtitle">>>> WELCOME TO THE WIRED. <span class="blinking">_</span></p>
+            <p class="terminal-prompt">Connection established... Initiating secure protocol...</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">./about</a></li>
+                <li><a href="#stack">./tech_stack</a></li>
+                <li><a href="#projects">./projects</a></li>
+                <li><a href="#contact">./contact</a></li>
+                <li><a href="#logs">./system_logs</a></li>
+            </ul>
+        </nav>
+        
+        <section id="about" class="section">
+            <h2 class="section-title">[ABOUT_OPERATOR.exe]</h2>
+            <div class="about-grid">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <img src="assets/me.png" alt="Avatar" style="width: 100%; height: 100%;">
+                    </div>
+                    <p style="margin-top: 15px; color: #ff6600;">STATUS: ONLINE</p>
+                </div>
+                <div>
+                    <p class="terminal-prompt">cat sergio_profile.txt</p>
+                    <p>>>> Sérgio Henrique - Computer Engineering Student</p>
+                    <p>>>> Specialization: Quality Assurance & Embedded Systems</p>
+                    <p>>>> Current Location: Brazil Server</p>
+                    <br>
+                    <p>⚡ CORE PROCESSES:</p>
+                    <ul style="list-style: none; margin-left: 20px;">
+                        <li>→ Backend Testing & API Quality Assurance</li>
+                        <li>→ Test Automation Development</li>
+                        <li>→ Arduino & ESP-32 Automation Development</li>
+                        <li>→ Coffee.exe Brewing Protocol</li>
+                    </ul>
+                    <br>
+                    <p style="color: #ff6600;">⚠️ WARNING: May contain traces of caffeine and late-night coding sessions.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="stack" class="section">
+            <h2 class="section-title">[TECH_ARSENAL.sys]</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>💾 Core Languages</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">Java</span>
+                        <span class="tech-item">Rust</span>
+                        <span class="tech-item">C/C++</span>
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">Go</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>🔧 Testing Arsenal</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">Selenium</span>
+                        <span class="tech-item">Postman</span>
+                        <span class="tech-item">Bruno</span>
+                        <span class="tech-item">Jenkins</span>
+                        <span class="tech-item">JIRA</span>
+                        <span class="tech-item">Docker</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>🤖 Hardware</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">Arduino</span>
+                        <span class="tech-item">ESP-32</span>
+                        <span class="tech-item">Raspberry Pi</span>
+                        <span class="tech-item">Embedded C</span>
+                        <span class="tech-item">IoT Protocols</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>💾 Database Systems</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">PostgreSQL</span>
+                        <span class="tech-item">MySQL</span>
+                        <span class="tech-item">SQLite</span>
+                        <span class="tech-item">NoSQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="section">
+            <h2 class="section-title">[PROJECT_ARCHIVE.db]</h2>
+            <div class="project-grid">
+                
+                <div class="project">
+                    <div class="project-status">ACTIVE</div>
+                    <h3>🤖 Battle Robots with ESP-32 - CARRANCA ROBOTICS TEAM</h3>
+                    <p><strong>Languages:</strong> C++, Arduino | <strong>Hardware:</strong> ESP-32, Arduino</p>
+                    <p>Developing autonomous robots for robotics competitions (Robocore's Cupim and Sumo), applying embedded systems, sensors, and control algorithms. Programming microcontrollers and integrating proximity sensors for autonomous navigation.</p>
+                    <p class="terminal-prompt"> 24/7 monitoring</p>
+                </div>
+                
+                <div class="project">
+                    <div class="project-status">ACTIVE</div>
+                    <h3>☕ Quality Assurance Intern - PREFEITURA DA CIDADE DO RECIFE</h3>
+                    <p><strong>Languages:</strong> Python, PHP | <strong>Tools:</strong> Bruno, Postman</p>
+                    <p>Performing manual tests with Bruno and Postman for API validation, checking functionality, performance, documenting bugs and collaborating with the development team to ensure quality standards.</p>
+                    <p class="terminal-prompt">learning_status: OPTIMAL | satisfaction: 100%</p>
+                </div>
+                
+                <div class="project">
+                    <div class="project-status">ARCHIVE</div>
+                    <h3>📚 Algorithms and Data Structures Teaching Assistant - UNIVERSIDADE POLITÉCNICA DE PERNAMBUCO </h3>
+                    <p><strong>Languages:</strong> Python | <strong>Focus:</strong> Algorithms, Data Structures</p>
+                    <p>Assisted students in understanding algorithms and data structures through one-on-one tutoring sessions. Developed supplementary materials and collaborated on grading assignments, providing feedback to students</p>
+                    <p class="terminal-prompt">status: FINISHED!</p>
+                </div>
+                
+                <div class="project">
+                    <div class="project-status">ARCHIVE</div>
+                    <h3>📊 Programming Logic Teaching Assistant</h3>
+                    <p><strong>Languages:</strong> JavaScript, Python | <strong>Stack:</strong> React, Flask</p>
+                    <p>Helped beginner students in programming by explaining basic concepts such as variables and loops. In tutoring sessions, we worked on solving algorithmic problems using Prolog, facilitating the transition from logic to practice.</p>
+                    <p class="terminal-prompt">status: FINISHED!</p>
+                </div>
+                
+                <div class="project">
+                    <div class="project-status">ACTIVE</div>
+                    <h3>🌐 TheSergioHenrique-Lair</h3>
+                    <p><strong>Languages:</strong> HTML, CSS, JavaScript | <strong>Style:</strong> Old-Web Retro</p>
+                    <p>This very website! A cyberpunk-themed portfolio with matrix effects, terminal aesthetics, and pixel-perfect retro styling. Welcome to the wired.</p>
+                    <p class="terminal-prompt">visitors: INCREASING | vibe: MAXIMUM_RETRO</p>
+                    <a href="https://github.com/TheSergioHenrique/thesergiohenrique.github.io" target="_blank" style="color: #ff6600;">→ VIEW_REPOSITORY.exe</a>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px; padding: 20px; border: 1px solid #00ff41; background: #001100;">
+                <p style="color: #ff6600; font-family: 'Orbitron', monospace; margin-bottom: 10px;">🚀 MORE PROJECTS AVAILABLE</p>
+                <a href="https://github.com/TheSergioHenrique" target="_blank" style="color: #00ff41; text-decoration: none; font-weight: bold; padding: 10px 20px; border: 1px solid #00ff41; transition: all 0.3s;" 
+                   onmouseover="this.style.background='#00ff41'; this.style.color='#000000';" 
+                   onmouseout="this.style.background='transparent'; this.style.color='#00ff41';">
+                   → ACCESS_FULL_GITHUB_ARCHIVE.sh
+                </a>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2 class="section-title">[COMMUNICATION_CHANNELS.net]</h2>
+            <div class="contact-grid">
+                <a href="mailto:sergio5203@gmail.com" class="contact-item">
+                    <div>📧 EMAIL</div>
+                    <div>sergio5203@gmail.com</div>
+                </a>
+                <a href="https://www.linkedin.com/in/s%C3%A9rgio-henrique-69abb5210/" class="contact-item">
+                    <div>💼 LINKEDIN</div>
+                    <div>Professional Network</div>
+                </a>
+                <a href="https://www.youtube.com/@LastCallDBS" class="contact-item">
+                    <div>📺 YOUTUBE</div>
+                    <div>Tech Content</div>
+                </a>
+            </div>
+        </section>
+        
+    </div>
+    
+    <footer>
+        <p>© 2025 TheSergioHenrique's Lair | Established in the Wired</p>
+        <p style="font-size: 0.8em; color: #666;">This website doesn't collect cookies, SINCE IT DOESN'T CARE ABOUT IT!</p>
+        <div class="terminal-prompt">Connection will remain active... Stay on-line.</div>
+    </footer>
 
-    <link rel="icon" type="image/png" href="./assets/favicon.png" />
-    <title>Eu sou Sérgio Henrique!</title>
-  </head>
-
-  <body>
-    <aside>
-      <img src="./assets/logo.png" alt="Números Imaginarios" />
-      <img src="./assets/Pfp.jpg" alt="Foto de Sérgio" />
-
-      <p>
-        Olá! eu sou <br />
-        <strong>Sérgio Henrique!</strong>
-      </p>
-
-      <span>-Made with ❤️ & code-</span>
-
-      <ul class="social-media-list">
-        <li>
-          <a
-            href="https://www.linkedin.com/in/s%C3%A9rgio-henrique-69abb5210/"
-            target="_blank"
-            ><img
-              src="https://unpkg.com/simple-icons@latest/icons/linkedin.svg"
-              alt="Linkedin"
-              title="Linkedin"
-          /></a>
-        </li>
-        <li>
-          <a href="https://github.com/TheSergioHenrique" target="_blank"
-            ><img
-              src="https://unpkg.com/simple-icons@latest/icons/github.svg"
-              alt="GitHub"
-              title="GitHub"
-          /></a>
-        </li>
-      </ul>
-    </aside>
-
-    <nav>
-      <a class="memory">
-        <h1>Transforme o seu mundo- comigo!</h1>
-
-        <div>
-          <img
-            src="./assets/Welcome.jpg"
-            alt="Foto do desenvolvedor Sérgio Henrique"
-          />
-        </div>
-        <p>
-          Que bom ter você aqui! me chamo <strong>Sérgio</strong>, e sou um
-          estudante de Engenharia da Computação, e sou apaixonado por <b>eletrônica</b> e <b>programação</b>. Além disso,
-          tenho plena capacidade de trabalhar em equipe e colaborar em projetos
-          multidisciplinares.
-        </p>
-      </a>
-      <a class="memory">
-        <h1>Minha história</h1>
-
-        <p>
-          Tenho uma história de longa data com a programação e o estudo
-          matématico, desde minha época de escola, interessado no curso
-          universitário de Engenharia da Computação. Também consegui, nesse meio
-          tempo, a certificação C1 na prova FCE, da Universidade de Cambridge.
-          Sendo assim, oficialmente fluente em Inglês. Hoje, vivo meu sonho
-          acadêmico, mas sinto que posso chegar cada vez mais longe.
-        </p>
-      </a>
-      <a
-        href="https://github.com/TheSergioHenrique"
-        target="_blank"
-        class="memory"
-      >
-        <small>Ficou interessado?</small>
-        <h1>Entre em contato comigo!</h1>
-      </a>
-    </nav>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
