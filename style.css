@@ -32,12 +32,13 @@ html
     background-color: #00060a;
     background-image: url("assets/bg.png");
     background-position: center top;
+
+    overscroll-behavior-y: none;
 }
 
 body
 {
     margin: 0;
-    background-color: #00060a;
 }
 
 ::selection
